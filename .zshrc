@@ -30,11 +30,11 @@ function y() {
 # Flutter
 export PATH="$HOME/Tools/flutter/bin:$PATH"
 
-# Theme
-eval "$(oh-my-posh init zsh --config '~/.config/ohmyposh/theme.toml')"
-
 # Zoxide
 eval "$(zoxide init zsh)"
 
-fastfetch
+# Zsh theme
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+fastfetch
