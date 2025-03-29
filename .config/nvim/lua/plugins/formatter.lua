@@ -10,6 +10,7 @@ return {
             json = { "prettier" },
             jsonc = { "prettier" },
             css = { "prettier" },
+            bash = { "beautysh" },
             -- You can customize some of the format options for the filetype (:help conform.format)
             -- rust = { "rustfmt", lsp_format = "fallback" },
             -- Conform will run the first available formatter
