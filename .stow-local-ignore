@@ -1,0 +1,14 @@
+# Comments and blank lines are allowed.
+
+# git
+\.git
+\.gitignore
+\.gitmodules
+
+# github stuff
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+#neovim stuff
+\.luarc.json
