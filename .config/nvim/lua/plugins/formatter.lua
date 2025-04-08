@@ -10,7 +10,7 @@ return {
             json = { "prettier" },
             jsonc = { "prettier" },
             css = { "prettier" },
-            bash = { "beautysh" },
+            sh = { "beautysh" },
             xml = { "xmlformatter" },
         },
         formatters = {
