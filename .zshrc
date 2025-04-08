@@ -2,7 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME=""
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Add wisely, as too many plugins slow down shell startup.
 plugins=( git zsh-autosuggestions zsh-syntax-highlighting you-should-use alias-finder )
@@ -34,7 +34,6 @@ export PATH="$HOME/Tools/flutter/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 # Zsh theme
-source ~/.powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 fastfetch
