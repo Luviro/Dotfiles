@@ -1,5 +1,5 @@
 # Comments and blank lines are allowed.
-
+#
 # git
 \.git
 \.gitignore
@@ -10,5 +10,8 @@
 ^/LICENSE.*
 ^/COPYING
 
-#neovim stuff
-\.luarc.json
+# neovim stuff
+.luarc.json
+
+# install script
+install.sh
