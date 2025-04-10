@@ -14,7 +14,7 @@ window {
     width: 768px;
     border: 2px;
     border-color: transparent;
-    background-color: @bg;
+    background-color: transparent;
     border-radius: 20px;
 }
 
