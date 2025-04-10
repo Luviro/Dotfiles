@@ -15,7 +15,7 @@ return {
         },
         formatters = {
             stylua = { prepend_args = { "--indent-type", "Spaces" } },
-            prettier = { prepend_args = { "--tab-width", 4 } },
+            prettier = { prepend_args = { "--tab-width", 4, "--trailing-comma", "none" } },
             xmlformatter = { prepend_args = { "--indent", 4 } },
         },
         vim.api.nvim_create_autocmd("BufWritePre", {
