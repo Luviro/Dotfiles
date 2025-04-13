@@ -25,6 +25,9 @@ return {
             lspconfig.jsonls.setup({
                 capabilities = capabilities,
             })
+            lspconfig.hyprls.setup({
+                capabilities = capabilities,
+            })
 
             -- keybinds
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
