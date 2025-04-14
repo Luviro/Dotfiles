@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 yn() {
-    read -p "$1 (Y/n) " yn
+    read -p "$1 [Y/n] " yn
     case $yn in
         [Yy]|"" ) echo proceeding... ;;
         [Nn] ) echo exiting...
