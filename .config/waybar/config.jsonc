@@ -31,7 +31,7 @@
         ]
     },
     "image#power_image": {
-        "exec": "~/.config/waybar/scripts/power_script.sh",
+        "exec": "~/.config/waybar/scripts/get_power_image.sh",
         "size": 40
     },
     "custom/power": {
@@ -121,18 +121,16 @@
             "transition-left-to-right": false,
             "click-to-reveal": true
         },
-        "modules": ["image#tools_image", "backlight", "idle_inhibitor"]
+        "modules": [
+            "image#tools_image",
+            "backlight",
+            "idle_inhibitor",
+            "custom/update"
+        ]
     },
     "image#tools_image": {
-        "exec": "$HOME/.config/waybar/scripts/tools_script.sh",
+        "exec": "$HOME/.config/waybar/scripts/get_tools_image.sh",
         "size": 40
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
     },
     "backlight": {
         "device": "intel_backlight",
@@ -142,5 +140,16 @@
         "on-click": "brightnessctl set 100%",
         "on-click-right": "brightnessctl set 1%",
         "on-click-middle": "brightnessctl set 50%"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "custom/update": {
+        "format": "",
+        "on-click": "kitty $HOME/.config/waybar/scripts/update_script.sh"
     }
 }

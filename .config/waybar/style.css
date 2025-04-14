@@ -80,8 +80,9 @@ window#waybar {
 #wireplumber,
 #battery,
 #backlight,
-#idle_inhibitor {
-    padding: 0 8px;
+#idle_inhibitor,
+#custom-update {
+    padding: 0 12px;
 }
 
 #language:hover,
@@ -90,7 +91,8 @@ window#waybar {
 #wireplumber:hover,
 #custom-notification:hover,
 #backlight:hover,
-#idle_inhibitor:hover {
+#idle_inhibitor:hover,
+#custom-update:hover {
     color: @click-fg;
 }
 
