@@ -47,5 +47,8 @@ rules = [
     # Fallback
     { name = "*", use = [
         "open",
+        "edit",
+        "extract",
+        "play",
     ] },
 ]
