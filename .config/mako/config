@@ -1,0 +1,13 @@
+max-history=100
+sort=-time
+
+layer=overlay
+
+font=JetBrainsMonoNerdFont 12
+include=~/.config/mako/colors
+width=360
+height=100
+border-radius=12
+progress-color=over #84F03C
+icon-border-radius=32
+default-timeout=5000
