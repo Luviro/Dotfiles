@@ -13,7 +13,7 @@ return {
                 visible = true,
             },
         },
-        vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>"),
+        vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle Neotree" }),
         close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
     },
 }

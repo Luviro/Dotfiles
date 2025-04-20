@@ -30,10 +30,30 @@ return {
             })
 
             -- keybinds
-            vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-            vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-            vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-            vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
+            vim.keymap.set(
+                "n",
+                "<leader>k",
+                vim.lsp.buf.hover,
+                { desc = "Displays hover information about the symbol under the cursor in a floating window" }
+            )
+            vim.keymap.set(
+                "n",
+                "<leader>d",
+                vim.lsp.buf.definition,
+                { desc = "Jumps to the definition of the symbol under the cursor" }
+            )
+            vim.keymap.set(
+                "n",
+                "<leader>ca",
+                vim.lsp.buf.code_action,
+                { desc = "Selects a code action available at the current cursor position" }
+            )
+            vim.keymap.set(
+                "n",
+                "<leader>r",
+                vim.lsp.buf.references,
+                { desc = "Lists all the references to the symbol under the cursor in the quickfix window" }
+            )
 
             -- floating window
             vim.o.updatetime = 250

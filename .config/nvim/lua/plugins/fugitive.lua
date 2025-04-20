@@ -8,6 +8,7 @@ return {
                 vim.cmd.Git()
             end,
             mode = "n",
+            desc = "Open fugitive (git wrapper)",
         },
     },
 }
