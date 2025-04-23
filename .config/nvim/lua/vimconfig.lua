@@ -2,11 +2,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- 4 spaces indentations rules
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
+-- indentations rules are set by .editorconfig
 
 -- Searching
 vim.opt.hlsearch = false
@@ -21,16 +17,6 @@ vim.g.maplocalleader = "\\"
 
 -- Since there is already a status line
 vim.opt.showmode = false
-
--- Flutter
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "dart",
-    callback = function()
-        vim.opt_local.tabstop = 2
-        vim.opt_local.softtabstop = 2
-        vim.opt_local.shiftwidth = 2
-    end,
-})
 
 -- Sync clipboard between OS and Neovim.
 vim.schedule(function()
