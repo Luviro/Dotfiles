@@ -28,6 +28,9 @@ return {
             lspconfig.hyprls.setup({
                 capabilities = capabilities,
             })
+            lspconfig.vimls.setup({
+                capabilities = capabilities,
+            })
 
             -- keybinds
             vim.keymap.set(
