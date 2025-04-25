@@ -9,11 +9,9 @@ fi
 # The path of the wallpapers directory
 wallpapers_dir="$HOME/.wallpapers"
 
-# regex to filter images
-regex=".*\.\(jpg\|png\|jpeg\)"
-
-# finds all images in the wallpaper directory and it's subdirectories
-filenames=$(find "$wallpapers_dir" -type f -regex $regex -printf "%P\n")
+# lists all images in the wallpaper directory
+filenames=$(ls $wallpapers_dir | grep -E "\w+\.(jpg|png)")
+echo $filenames
 
 # make rofi display the icons for the wallpapers
 entries=""
