@@ -10,9 +10,6 @@ return {
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
             })
-            lspconfig.dartls.setup({
-                capabilities = capabilities,
-            })
             lspconfig.taplo.setup({
                 capabilities = capabilities,
             })
