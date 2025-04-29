@@ -1,6 +1,5 @@
-@import "colors.rasi"
+@import "colors/colors.rasi"
 
-/* General Configuration */
 configuration {
 	terminal: "kitty";
 	font: "JetBrainsMono Nerd Font 14";
@@ -8,7 +7,6 @@ configuration {
 	drun-display-format: " {name}";
 	display-drun: "";
 }
-
 
 window {
     width: 768px;

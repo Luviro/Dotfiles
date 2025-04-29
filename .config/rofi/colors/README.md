@@ -1,0 +1,1 @@
+# colors.rasi gets replaced by the theme picker script

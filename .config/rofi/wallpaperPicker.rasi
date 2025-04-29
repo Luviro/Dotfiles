@@ -1,4 +1,5 @@
-@import "colors.rasi"
+@import "colors/colors.rasi"
+
 * {
     background-color: transparent;
 }
