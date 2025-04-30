@@ -7,18 +7,20 @@ if pgrep -x "rofi" &> /dev/null; then
 fi
 
 themes="Purple/Lime\nHatsune Miku"
-themes_directory="$HOME/.config/rofi/colors"
+conifg="$HOME/.config"
 
 # run rofi
 picked=$(echo -e "$themes" | rofi -dmenu -theme $HOME/.config/rofi/themePicker.rasi)
 echo $picked
 
 purple_lime(){
-    cp "$themes_directory/purple-lime.rasi" "$themes_directory/colors.rasi"
+    cp "$config/rofi/colors/purple-lime.rasi" "$config/rofi/colors/colors.rasi"
+    cp "$config/cava/colors/purple-lime" "$config/cava/config"
 }
 
 hatsune_miku(){
-    cp "$themes_directory/hatsune-miku.rasi" "$themes_directory/colors.rasi"
+    cp "$config/rofi/colors/hatsune-miku.rasi" "$config/rofi/colors/colors.rasi"
+    cp "$config/cava/colors/hatsune-miku" "$config/cava/config"
 }
 
 case $picked in
@@ -27,6 +29,7 @@ case $picked in
         ;;
     "Hatsune Miku")
         hatsune_miku
+        cp "$themes_directory/purple-lime.rasi" "$themes_directory/colors.rasi"
         ;;
     "")
         notify-send "didn't pick a theme"
