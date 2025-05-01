@@ -1,0 +1,13 @@
+[general]
+framerate = 144
+
+[color]
+gradient = 1
+gradient_color_1 = '#000000'
+gradient_color_2 = '#7B3CF0'
+gradient_color_3 = '#84F03C'
+gradient_color_4 = '#84F03C'
+gradient_color_5 = '#84F03C'
+gradient_color_6 = '#84F03C'
+gradient_color_7 = '#AFF084'
+gradient_color_8 = '#AFF084'

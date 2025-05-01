@@ -1,0 +1,6 @@
+* {
+    bg: #373B3E;
+    fg: #55D1D0;
+    transparent04-fg: #55D1D066;
+    text-color: #55D1D0;
+}
