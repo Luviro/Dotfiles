@@ -6,23 +6,35 @@ if pgrep -x "rofi" &> /dev/null; then
     exit 1
 fi
 
+# themes
 themes="Purple/Lime\nHatsune Miku"
 
-cava="$HOME/.config/cava/config"
-rofi="$HOME/.config/rofi/colors.rasi"
+# paths for relevant configs
+config="$HOME/.config"
+
+cava="cava/config"
+rofi="rofi/colors.rasi"
+clipse="clipse/custom_theme.json"
+
 themes_dir="$HOME/.config/mythemes"
 
 # run rofi
 picked=$(echo -e "$themes" | rofi -dmenu -theme $HOME/.config/rofi/themePicker.rasi)
 
+# function for purple-lime theme
 purple_lime(){
-    cp "$themes_dir/rofi/purple-lime.rasi" "$rofi"
-    cp "$themes_dir/cava/purple-lime" "$cava"
+    local purple_lime="$themes_dir/purple-lime"
+    cp "$purple_lime/$rofi" "$config/$rofi"
+    cp "$purple_lime/$cava" "$config/$cava"
+    cp "$purple_lime/$clipse" "$config/$clipse"
 }
 
+# function for hatsune-miku theme
 hatsune_miku(){
-    cp "$themes_dir/rofi/hatsune-miku.rasi" "$rofi"
-    cp "$themes_dir/cava/hatsune-miku" "$cava"
+    local hatsune_miku="$themes_dir/hatsune-miku"
+    cp "$hatsune_miku/$rofi" "$config/$rofi"
+    cp "$hatsune_miku/$cava" "$config/$cava"
+    cp "$hatsune_miku/$clipse" "$config/$clipse"
 }
 
 case $picked in
