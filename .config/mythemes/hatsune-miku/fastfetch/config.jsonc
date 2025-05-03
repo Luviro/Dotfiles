@@ -1,9 +1,9 @@
 {
     "logo": {
         "color": {
-            "1": "#AA84F0"
+            "1": "#55D1D0"
         },
-        "source": "$HOME/.config/fastfetch/ascii/arch.txt",
+        "source": "$HOME/.config/fastfetch/ascii/miku.txt",
         "padding": {
             "left": 4,
             "top": 2
@@ -18,50 +18,50 @@
         {
             "type": "title",
             "color": {
-                "user": "#84F03C",
-                "host": "#84F03C"
+                "user": "#FF1688",
+                "host": "#FF1688"
             }
         },
         {
             "type": "custom",
             "format": "┌────────────────────────────────────────────┐",
-            "outputColor": "#AA84F0"
+            "outputColor": "#55D1D0"
         },
         {
             "type": "os",
             "key": "  󰣇 OS       ",
-            "keyColor": "#84F03C"
+            "keyColor": "#FF1688"
         },
         {
             "type": "kernel",
             "key": "   Kernel   ",
-            "keyColor": "#84F03C"
+            "keyColor": "#FF1688"
         },
         {
             "type": "wm",
             "key": "   WM       ",
-            "keyColor": "#84F03C"
+            "keyColor": "#FF1688"
         },
         {
             "type": "terminal",
             "key": "   Terminal ",
-            "keyColor": "#84F03C"
+            "keyColor": "#FF1688"
         },
         {
             "type": "packages",
             "key": "  󰏗 Packages ",
-            "keyColor": "#84F03C"
+            "keyColor": "#FF1688"
         },
         {
             "type": "display",
             "key": "  󰍹 Display  ",
             "format": "{1}x{2} @ {3}Hz [{7}]",
-            "keyColor": "#84F03C"
+            "keyColor": "#FF1688"
         },
         {
             "type": "uptime",
             "key": "   Uptime   ",
-            "keyColor": "#84F03C"
+            "keyColor": "#FF1688"
         },
         {
             "type": "custom",

@@ -13,8 +13,10 @@ themes="Purple/Lime\nHatsune Miku"
 config="$HOME/.config"
 
 cava="cava/config"
-rofi="rofi/colors.rasi"
 clipse="clipse/custom_theme.json"
+fastfetch="fastfetch/config.jsonc"
+rofi="rofi/colors.rasi"
+
 
 themes_dir="$HOME/.config/mythemes"
 
@@ -27,6 +29,7 @@ purple_lime(){
     cp "$purple_lime/$rofi" "$config/$rofi"
     cp "$purple_lime/$cava" "$config/$cava"
     cp "$purple_lime/$clipse" "$config/$clipse"
+    cp "$purple_lime/$fastfetch" "$config/$fastfetch"
 }
 
 # function for hatsune-miku theme
@@ -35,6 +38,7 @@ hatsune_miku(){
     cp "$hatsune_miku/$rofi" "$config/$rofi"
     cp "$hatsune_miku/$cava" "$config/$cava"
     cp "$hatsune_miku/$clipse" "$config/$clipse"
+    cp "$hatsune_miku/$fastfetch" "$config/$fastfetch"
 }
 
 case $picked in
