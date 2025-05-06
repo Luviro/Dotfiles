@@ -24,6 +24,7 @@ purple_lime(){
     cp -r "$purple_lime/cava/." "$config/cava"
     cp -r "$purple_lime/clipse/." "$config/clipse"
     cp -r "$purple_lime/fastfetch/." "$config/fastfetch"
+    cp -r "$purple_lime/hypr/." "$config/hypr"
 }
 
 # function for hatsune-miku theme
@@ -33,6 +34,7 @@ hatsune_miku(){
     cp -r "$hatsune_miku/cava/." "$config/cava"
     cp -r "$hatsune_miku/clipse/." "$config/clipse"
     cp -r "$hatsune_miku/fastfetch/." "$config/fastfetch"
+    cp -r "$hatsune_miku/hypr/." "$config/hypr"
 }
 
 case $picked in
