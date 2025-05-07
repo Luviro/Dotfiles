@@ -26,6 +26,10 @@ purple_lime(){
     cp -r "$purple_lime/fastfetch/." "$config/fastfetch"
     cp -r "$purple_lime/hypr/." "$config/hypr"
     cp -r "$purple_lime/mako/." "$config/mako"
+    makoctl reload
+    cp -r "$purple_lime/waybar/." "$config/waybar"
+    killall waybar;
+    waybar
 }
 
 # function for hatsune-miku theme
@@ -38,6 +42,9 @@ hatsune_miku(){
     cp -r "$hatsune_miku/hypr/." "$config/hypr"
     cp -r "$hatsune_miku/mako/." "$config/mako"
     makoctl reload
+    cp -r "$hatsune_miku/waybar/." "$config/waybar"
+    killall waybar;
+    waybar
 }
 
 case $picked in

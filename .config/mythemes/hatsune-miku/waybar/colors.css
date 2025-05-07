@@ -1,0 +1,10 @@
+@define-color bg rgba(17,17,17,0.8);
+@define-color fg #55D1D0;
+@define-color click-fg #FF1688;
+
+@define-color border #55D1D0;
+
+@define-color active-workspace-bg rgba(85, 193, 192, 0.2);
+@define-color active-workspace-fg #FF1688;
+@define-color hover-workspace-bg rgba(170, 193, 192, 0.5);
+@define-color hover-workspace-fg #FF1688;
