@@ -25,6 +25,7 @@ purple_lime(){
     cp -r "$purple_lime/clipse/." "$config/clipse"
     cp -r "$purple_lime/fastfetch/." "$config/fastfetch"
     cp -r "$purple_lime/hypr/." "$config/hypr"
+    cp -r "$purple_lime/mako/." "$config/mako"
 }
 
 # function for hatsune-miku theme
@@ -35,6 +36,8 @@ hatsune_miku(){
     cp -r "$hatsune_miku/clipse/." "$config/clipse"
     cp -r "$hatsune_miku/fastfetch/." "$config/fastfetch"
     cp -r "$hatsune_miku/hypr/." "$config/hypr"
+    cp -r "$hatsune_miku/mako/." "$config/mako"
+    makoctl reload
 }
 
 case $picked in
