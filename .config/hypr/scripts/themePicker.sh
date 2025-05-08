@@ -12,6 +12,7 @@ themes="Purple/Lime\nHatsune Miku"
 # paths for relevant configs
 config="$HOME/.config"
 
+# themes directory
 themes_dir="$HOME/.config/mythemes"
 
 # run rofi
