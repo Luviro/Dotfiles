@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
 prepend_keymap = [

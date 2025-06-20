@@ -51,20 +51,7 @@
         "on-scroll-down": "hyprctl dispatch workspace e+1"
     },
     // Center Modules
-    "clock": {
-        "interval": 1,
-        "format": "{:%A, %b %d | %r}",
-        "tooltip-format": "{calendar}",
-        "calendar": {
-            "mode": "month",
-            "format": {
-                "months": "<span color='#AA84F0'><b>{}</b></span>",
-                "days": "<span color='#EEEEEE'><b>{}</b></span>",
-                "weekdays": "<span color='#AA84F0'><b>{}</b></span>",
-                "today": "<span color='#84F03C'><b><u>{}</u></b></span>"
-            }
-        }
-    },
+    "include": "$HOME/.config/waybar/theme.jsonc",
     // Right Modules
     "tray": {
         "icon-size": 16,
@@ -125,7 +112,8 @@
             "image#tools_image",
             "backlight",
             "idle_inhibitor",
-            "custom/update"
+            "custom/update",
+            "custom/random_wallpaper"
         ]
     },
     "image#tools_image": {
@@ -151,5 +139,9 @@
     "custom/update": {
         "format": "",
         "on-click": "kitty $HOME/.config/waybar/scripts/update_script.sh"
+    },
+    "custom/random_wallpaper": {
+        "format": "w",
+        "on-click": "$HOME/.config/hypr/scripts/randomWallpaper.sh"
     }
 }

@@ -1,0 +1,16 @@
+{
+    "clock": {
+        "interval": 1,
+        "format": "{:%A, %b %d | %r}",
+        "tooltip-format": "{calendar}",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "months": "<span color='#AA84F0'><b>{}</b></span>",
+                "days": "<span color='#EEEEEE'><b>{}</b></span>",
+                "weekdays": "<span color='#AA84F0'><b>{}</b></span>",
+                "today": "<span color='#84F03C'><b><u>{}</u></b></span>"
+            }
+        }
+    }
+}
