@@ -20,12 +20,12 @@ title_format = "Yazi:{cwd}"
 wrap = "no"
 tab_size = 4
 
-max_width = 9999
-max_height = 9999
+max_width = 8000
+max_height = 8000
 cache_dir = ""
 image_delay = 0
 image_filter = "lanczos3"
-image_quality = 90
+image_quality = 80
 ueberzug_scale = 1
 ueberzug_offset = [0, 0, 0, 0]
 
@@ -63,3 +63,6 @@ rules = [
         "play",
     ] },
 ]
+
+[tasks]
+image_bound = [0, 0]
